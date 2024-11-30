@@ -1,7 +1,12 @@
 import { useState } from "react";
- 
+import PropTypes from 'prop-types';
 
+ 
 const FormComponent = ({ addQuery }) => {
+    FormComponent.propTypes = {
+        addQuery: PropTypes.func
+    };
+    
   const [text, setText] = useState('');
 
   const handleSubmit = (e) => {
