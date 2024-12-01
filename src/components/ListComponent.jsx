@@ -5,11 +5,14 @@ const ListComponent = ({ queries }) => {
     queries: PropTypes.array
 };
   return (
-    <ul>
-      {queries.map((query) => (
-        <li key={query.id}>{query.content}</li>
-      ))}
-    </ul>
+    <> 
+      <h2>문의 목록</h2>
+      <ul>
+        {queries.map((query) => (
+          <li key={query.id}>{query.content}</li>
+        ))}
+      </ul>
+    </>
   );
 };
 
